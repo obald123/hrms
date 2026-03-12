@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Outfit } from 'next/font/google';
 import './globals.css';
 import "flatpickr/dist/flatpickr.css";
@@ -7,6 +8,16 @@ import { Toaster } from 'react-hot-toast';
 const outfit = Outfit({
   subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+  title: {
+    default: "HRMS-2026",
+    template: "%s | Dtecsoftwaresolutions",
+  },
+  icons: {
+    icon: "/dtec.png",
+  },
+};
 
 export default function RootLayout({
   children,

@@ -1,7 +1,7 @@
 import { ApiClientError, apiClient } from "@/lib/api-client";
 import { authStorage } from "@/lib/auth-storage";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:4000";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "https://hrms2026.dtecsoftwaresolutions.com";
 
 type JobStatus = "DRAFT" | "PENDING_APPROVAL" | "APPROVED" | "PUBLISHED" | "CLOSED";
 

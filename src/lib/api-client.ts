@@ -1,6 +1,6 @@
 import { authEvents, authStorage } from "@/lib/auth-storage";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:4000";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "https://hrms2026.dtecsoftwaresolutions.com";
 
 export class ApiClientError extends Error {
   status: number;
